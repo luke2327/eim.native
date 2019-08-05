@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "eim.frontend",
-    "slug": "eim.forntend",
+    "slug": "eim",
     "privacy": "public",
     "sdkVersion": "34.0.0",
     "platforms": [
