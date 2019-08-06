@@ -9,11 +9,14 @@
       "android",
       "web"
     ],
+    "packagerOpts": {
+      "sourceExts": ["jsx", "js"]
+    },
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/test_icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/test_splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
