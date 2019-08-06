@@ -1,16 +1,15 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Header from '../header/index';
-import MainHome from '../main/index';
+import React from 'react';
+import { Scene, Router } from 'react-native-router-flux';
+import Header from '../header/header';
+import MainHome from '../main/main';
 
-const NavigationStack = createStackNavigator({
-  Header: {
-    screen: Header
-  },
-  MainHome: {
-    screen: MainHome
-  }
-});
-
-const MainContainer = createAppContainer(NavigationStack);
-
-export default MainContainer;
+export default function MainAppRouterContainer () {
+  return (
+    <Router>
+      <Scene key="root">
+        <Scene key="MainHome" component={MainHome} title="Main Home" initial={true} />
+        <Scene key="Header" component={Header} title="Header" />
+      </Scene>
+    </Router>
+  );
+}

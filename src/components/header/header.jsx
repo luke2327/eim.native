@@ -1,17 +1,10 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
 export default function Header() {
   return (
     <View style={styles.container}>
       <Text>Header</Text>
-      <Button
-        title="go to mainApp"
-        onPress={
-          () => {}
-        }
-      />
-      <Text>{ this.props === undefined ? 'Hello' : 'World' }</Text>
     </View>
   );
 }
