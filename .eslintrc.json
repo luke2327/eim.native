@@ -1,85 +1,70 @@
 {
-  "env": {
-    "browser": true
-  },
-  "globals": {
-    "angular": true,
-    "moment": true,
-    "_": true,
-    "$": true,
-    "jQuery": true,
-    "$event": true,
-    "Pusher": true,
-    "fastdom": true,
-    "debug": true,
-    "PerfectScrollbar": true,
-    "noty": true,
-    "App": true,
-    "chrome": true,
-    "c3": true,
-    "d3": true,
-    "JsBarcode": true,
-    "swal": true,
-    "swalExtend": true,
-    "jsPDF": true,
-    "html2canvas": true,
-    "Canvas2Image": true,
-    "CKEDITOR": true,
-    "PNotify": true,
-    "CryptoJS": true,
-    "Uint8Array": true,
-    "WebFont": true,
-    "ClusterWS": true,
-    "chromeTabs": true,
+    "env": {
+        "browser": true,
+        "es6": true,
+        "react-native/react-native": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:react-native/all"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-native"
+    ],
+    "rules": {
+        "strict": ["error", "global"],
 
-    "arrLargeCode": true,
-    "arrLargeName": true,
-    "arrLargeExtension": true,
-    "arrMiddleCode": true,
-    "arrMiddleName": true,
-    "arrMiddleExtension": true,
-    "arrSmallCode": true,
-    "arrSmallName": true,
-    "arrSmallExtension": true,
-    "arrDetailCode": true,
-    "arrDetailName": true,
-    "arrDetailExtension": true
-  },
-  "extends": "eslint:recommended",
-  "rules": {
-      "strict": ["error", "global"],
-      
-      "no-console": ["warn"],
-      "no-unused-vars": ["error", { "vars": "all", "args": "after-used" }],
-      "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
-      "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
-      "no-extra-semi": "error",
-      "no-unneeded-ternary": "error",
-      "no-multiple-empty-lines": ["error", { "max": 1 }],
-      "no-trailing-spaces": ["error"],
-      
-      "computed-property-spacing": ["error", "never"],
-      "block-spacing": ["error"],
-      "comma-spacing": ["error", { "before": false, "after": true }],
-      "key-spacing": ["error"],
-      "keyword-spacing": ["error"],
-      "object-curly-spacing": ["error", "always"],
-      "switch-colon-spacing": ["error"],
-      "semi-spacing": ["error", { "before": false, "after": true }],
-      
-      "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
-      "dot-location": ["error", "property"],
-      "dot-notation": ["error"],
-      "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return" }, { "blankLine": "always", "prev": ["var"], "next": "*" }, { "blankLine": "any", "prev": ["var"], "next": ["var"] }],
-      "space-before-blocks": "error",
-      "space-in-parens": ["error", "never"],
-      "space-infix-ops": ["error"],
-      "space-unary-ops": ["error"],
-      
-      "curly": ["error"],
-      "indent": ["error", 2, { "SwitchCase": 1, "VariableDeclarator": { "var": 2 }, "MemberExpression": 1, "ignoreComments": true }],
-      "quotes": ["error", "single", { "avoidEscape": true }],
-      "quote-props": ["error", "consistent-as-needed"],
-      "semi": ["error", "always"]
-  }
+        "no-console": ["warn"],
+        "no-unused-vars": ["error", { "vars": "all", "args": "none", "varsIgnorePattern": "React-Native" }],
+        "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+        "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+        "no-extra-semi": "error",
+        "no-unneeded-ternary": "error",
+        "no-multiple-empty-lines": ["error", { "max": 1 }],
+        "no-trailing-spaces": ["error"],
+
+        "computed-property-spacing": ["error", "never"],
+        "block-spacing": ["error"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "key-spacing": ["error"],
+        "keyword-spacing": ["error"],
+        "object-curly-spacing": ["error", "always"],
+        "switch-colon-spacing": ["error"],
+        "semi-spacing": ["error", { "before": false, "after": true }],
+
+        "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+        "dot-location": ["error", "property"],
+        "dot-notation": ["error"],
+        "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return" }, { "blankLine": "always", "prev": ["var"], "next": "*" }, { "blankLine": "any", "prev": ["var"], "next": ["var"] }],
+        "space-before-blocks": "error",
+        "space-in-parens": ["error", "never"],
+        "space-infix-ops": ["error"],
+        "space-unary-ops": ["error"],
+
+        "curly": ["error"],
+        "indent": ["error", 2, { "SwitchCase": 1, "VariableDeclarator": { "var": 2 }, "MemberExpression": 1, "ignoreComments": true }],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "quote-props": ["error", "consistent-as-needed"],
+        "semi": ["error", "always"],
+
+        "react-native/no-unused-styles": 2,
+        "react-native/split-platform-components": 2,
+        "react-native/no-inline-styles": 2,
+        "react-native/no-raw-text": 2,
+        "react-native/sort-styles": ["error", "asc", { "ignoreClassNames": false, "ignoreStyleProperties": false }]
+    }
 }
