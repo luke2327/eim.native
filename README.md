@@ -1,6 +1,7 @@
 # eim.frontend
 
 ### EIM Frontend Project 2019
+_Everything in MapleStory_
 
 > 본 리포지토리는 EIM 의 프론트엔드 리포지토리 입니다.
 
@@ -24,9 +25,16 @@
 
 ## 실행 방법
 #### 프론트엔드
-`npm run start` 
-or
-`expo start --tunnel`
+`npm run start` or `expo start --tunnel`
 - - -
+#### 백엔드
+[추가바람]
+
+## 업데이트
+#### 프론트엔드
+1. Expo 프레임워크 사용 및 바벨 적용 (2019. 08. 05)
+2. 기초 파일 셋팅 및 ESLint 구성 (2019. 08. 05)
+3. ESLint 추가 구성 및 JSX 파일 확장자 사용 (2019. 08. 06)
+
 #### 백엔드
 [추가바람]
