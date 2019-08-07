@@ -1,7 +1,7 @@
 import React from 'react';
 import { Scene, Router } from 'react-native-router-flux';
-import Header from '../header/header';
-import MainHome from '../main/main';
+import Header from '../components/header/header';
+import MainHome from '../components/main/main';
 
 export default function MainAppRouterContainer () {
   return (
