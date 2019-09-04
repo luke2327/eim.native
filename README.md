@@ -35,6 +35,8 @@ _Everything in MapleStory_
 1. Expo 프레임워크 사용 및 바벨 적용 (2019. 08. 05)
 2. 기초 파일 셋팅 및 ESLint 구성 (2019. 08. 05)
 3. ESLint 추가 구성 및 JSX 파일 확장자 사용 (2019. 08. 06)
+4. Lodash & navigation 모듈 react-native-router-flux 로 변경 (2019. 08. 06)
+5. [테스트] 상단 헤더 및 바텀 탭 추가 (2019. 08. 07)
 
 #### 백엔드
 [추가바람]

@@ -1,10 +1,10 @@
-import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 
-export default function MainHome() {
+export default function Footer() {
   return (
     <View style={styles.container}>
-      <Text>MainHome</Text>
+      <Text>Footer</Text>
     </View>
   );
 }
