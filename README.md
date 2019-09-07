@@ -25,13 +25,9 @@ _Everything in MapleStory_
 1. git clone [리포지토리 url]
 2. cd [리포지토리 이름] && npm install
 
-- - -
-
 ## 실행 방법
 #### 네이티브
 `npm run start` or `expo start --tunnel`
-
-- - -
 
 ## 업데이트
 #### 네이티브
